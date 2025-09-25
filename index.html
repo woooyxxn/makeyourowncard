@@ -10,26 +10,22 @@
       font-family: 'GasiGasiBaekMinju';
       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishThornFontOTF.woff') format('woff');
       font-weight: normal;
-      font-display: swap;
-    }
+      font-display: swap;}
     @font-face {
       font-family: 'OngleipParkDahyeon';
       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
       font-weight: normal;
-      font-display: swap;
-    }
+      font-display: swap;}
     @font-face {
       font-family: 'Yeongwol';
       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2507-2@1.0/YeongwolTTF-Regular.woff2') format('woff2');
       font-weight: normal;
-      font-display: swap;
-    }
+      font-display: swap;}
 
     body {
       font-family: ui-sans-serif, system-ui, -apple-system, "Noto Sans KR", sans-serif;
       margin:0; padding:24px;
-      background:#0b0c10; color:#f4f7fb;
-    }
+      background:#0b0c10; color:#f4f7fb;}
     * { box-sizing: border-box; }
 
     .container { display:flex; gap:48px; align-items:flex-start; }
@@ -44,8 +40,7 @@
       width:500px; height:500px; border:1px solid #ffffff;
       padding:50px; line-height:1.6; font-size:2rem;
       background-size:cover; background-position:center; background-repeat:no-repeat;
-      color:#0000ff; display:flex; flex-direction:column; justify-content:space-between;
-    }
+      color:#0000ff; display:flex; flex-direction:column; justify-content:space-between; }
     .msg { margin-top:12px; }
     .footer { display:flex; justify-content:space-between; margin-top:8px; }
     #save { margin-top:8px; height:36px; border:1px solid #555; background:#f4f7fb; color:#15181f; cursor:pointer; }
@@ -64,8 +59,8 @@
       <button class="paper-btn" data-bg="breakup.jpg">이별편지</button>
       <button class="paper-btn" data-bg="party.jpg">생일편지</button>
       <button class="paper-btn" data-bg="apology.jpg">사과편지</button>
-      <button class="paper-btn" data-bg="menu.jpg">저메추</button>
-      <button class="paper-btn" data-bg="pooky.jpg">협박편지</button>
+      <button class="paper-btn" data-bg="menu.jpg">저메추편지</button>
+      <button class="paper-btn" data-bg="pooky.jpg">저주편지</button>
     </div>
 
     <label>서체:</label>
@@ -87,7 +82,7 @@
     <div id="monitor"></div>
     <button id="save">이미지 저장</button>
   </div>
-</div>
+  </div>
 
 <script>
   const monitor = document.getElementById('monitor');
@@ -108,7 +103,6 @@
     };
   });
 
-  // 폰트 버튼 선택 (순서 및 라벨 유지)
   let currentFont = "inherit";
   fonts.querySelectorAll('.font-btn').forEach(btn=>{
     btn.onclick = function(){
